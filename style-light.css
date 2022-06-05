@@ -89,6 +89,8 @@
 .user-image {
   margin: 0 0 32px;
   text-align: center;
+  border: #ff0000;
+  border-radius: 100px;
 }
 
 .intro h3,
@@ -120,6 +122,10 @@
 
 .skill-css {
   background-image: url("img/icon-css.svg");
+}
+
+.skill-js {
+  background-image: url("img/icon-js.svg");
 }
 
 .level {
@@ -172,6 +178,7 @@
   border-radius: 4px;
   background-color: #288be6;
   color: #ffffff;
+  
 }
 
 .page-footer {
@@ -233,6 +240,44 @@
   outline-color: #b6aaff;
 }
 
+.container1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  }
+
+.slide {
+  height: 80vh;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  }
+
+  .slide a {
+    position: relative;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+  }
+  
+  .slide.active {
+    flex:10;
+  }
+  
+  .slide.active a {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
 
 /* Темная тема */
 
